@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<h1 id="title">CS Student Survey Form</h1>
+<p id="description">Please fill out the form with the required information</p>
+<form id="survey-form" action="sampleform.com" method="POST">
+  <fieldset>
+    <label id="name-label" for="name">Name<input id="name" type="text" name="Name" placeholder="Enter your name" required></label>
+    <label id="email-label" for="email">Email<input id="email" type="email" name="Email" placeholder="Enter your email" required></label>
+    <label id="number-label" for="number">Age(optional)<input id="number" type="number" name="Age" min="18" max="80" placeholder="Age"></label>
+    </fieldset>
+    <fieldset>
+    <legend>Gender</legend>
+    <label for="male"><input id="male" class="inline" type="radio" name="Gender" value="M"> Male</label>
+    <label for="female"><input id="female" class="inline" type="radio" name="Gender" value="F"> Female</label>
+      </fieldset>
+<fieldset>
+  <label for="current-college">Current School/University<input id="current-college" type="text" name="college" placeholder="Enter your school/university" required></label>
+  <label for="dropdown">Expected Graduation Year
+    <select id="dropdown">
+      <option value="">select year</option>
+      <option value="4">2024</option>
+      <option value="5">2025</option>
+      <option value="6">2026</option>
+      <option value="7">2027</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+<legend>Preferred Programming Languages (Select at least one):</legend>
+        <label><input class="inline" type="checkbox" name="language-preference" value="py"> Python</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="java"> Java</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="C++"> C++</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="js"> JavaScript</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="C#"> C#</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="rubby"> Ruby</label>
+        <label><input class="inline" type="checkbox" name="language-preference" value="other"> Other</label>
+        </fieldset>
+<fieldset>
+      <label for="interest-area">Areas of Interest
+        <select id="interest-area">
+        <option value="">select Area</option>
+        <option value="1">Artificial Intelligence</option>
+        <option value="2">Web Development</option>
+        <option value="3">Cybersecurity</option>
+        <option value="4">Data Science</option>
+        <option value="5">Software Engineering</option>
+        <option value="6">Networking</option>
+        <option value="7">Mobile Development</option>
+        <option value="8">Other</option>
+        </select>
+        </label>
+        <label for="refer">How did you hear about this program?
+          <select id="refer">
+            <option value="">select an option</option>
+            <option value="1">School/University</option>
+            <option value="2">Online Advertisement</option>
+            <option value="3">Social Media</option>
+            <option value="">Friend/Family</option>
+            </select>
+            </label>
+            <label for="goals">Any specific expectations or goals from this program?<textarea id="goals" name="goals" rows="6" cols="8" placeholder="Enter your expectations or goals here..."></textarea></label>
+<input id="submit" type="submit" value="Submit">
+</fieldset>
+</form>
+      </body>
+  </html>
